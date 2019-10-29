@@ -30,5 +30,10 @@ aside nav li > h5 {
     height: 100vh;
     border-top: 8px solid black;
     margin: 0;
+    transition: 0.43s ease-in-out;
+  }
+  aside:focus {
+    border-top-color: orange;
+    transform: translateY(-50vh);
   }
 }
