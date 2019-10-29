@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
@@ -16,6 +17,20 @@
 
 <body>
   <main id="myMap"></main>
+  <aside>
+    <nav>
+      <ul>
+        <li>
+          <h5>Hauser Plads</h5>
+          <p>Godt sted til en legepause på byturen.</p>
+        </li>
+        <li>
+          <h5>Kastellet</h5>
+          <p>På Smedelinien ved Gustafkirken, udfor Princessens Bastion</p>
+        </li>
+      </ul>
+    </nav>
+  </aside>
   <script async>
     const myMap = L.map('myMap').setView([56.360029, 10.746635], 8);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
