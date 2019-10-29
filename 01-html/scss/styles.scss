@@ -1,0 +1,11 @@
+@mixin for-phone-only {
+  @media screen and (max-width: 599px) { @content; }
+}
+
+@import "nav";
+
+#myMap {
+  width: 100vw;
+  height: 100vh;
+}
+
