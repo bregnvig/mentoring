@@ -1,6 +1,4 @@
-import { Playground, Coordinate } from "./classes-and-interfaces";
-
-export const playgrounds: Playground[] = [{
+export const playgrounds = [{
   "id": "legeplads.1",
   "name": "Havnegades trampolinpromenade",
   "description": "Hop i trampolin med havnekig.",
@@ -362,7 +360,6 @@ export const playgrounds: Playground[] = [{
 }, {
   "id": "legeplads.41",
   "name": "ByOasen i De Gamles By",
-  "description": null,
   "addressDescription": "Møllegade 25 C",
   "position": {
       "lat": 55.69275828010435,
@@ -398,7 +395,6 @@ export const playgrounds: Playground[] = [{
 }, {
   "id": "legeplads.45",
   "name": "Legepladsen i Mimersparken",
-  "description": null,
   "addressDescription": "Borgmestervangen 51",
   "position": {
       "lat": 55.70460084663622,
@@ -713,7 +709,6 @@ export const playgrounds: Playground[] = [{
 }, {
   "id": "legeplads.80",
   "name": "Legepladsen på Ålekistevej",
-  "description": null,
   "addressDescription": "v.Vanløse Skole",
   "position": {
       "lat": 55.68679654678301,
@@ -839,7 +834,6 @@ export const playgrounds: Playground[] = [{
 }, {
   "id": "legeplads.95",
   "name": "Legepladsen i Husum Bypark",
-  "description": null,
   "addressDescription": "Frederikssundsvej 281-299",
   "position": {
       "lat": 55.70960252490761,
@@ -920,7 +914,6 @@ export const playgrounds: Playground[] = [{
 }, {
   "id": "legeplads.104",
   "name": "legepladsen på Møntmestervej",
-  "description": null,
   "addressDescription": "Møntmestervej ml. 14 og 16",
   "position": {
       "lat": 55.706996990773995,
@@ -1190,7 +1183,6 @@ export const playgrounds: Playground[] = [{
 }, {
   "id": "legeplads.134",
   "name": "Legepladsen i Kornblomstparken",
-  "description": null,
   "addressDescription": "Øselsgade 5",
   "position": {
       "lat": 55.66129136506624,
@@ -1198,7 +1190,7 @@ export const playgrounds: Playground[] = [{
   }
 }]
 
-export const getDistance = (p1: Coordinate, p2: Coordinate) => {
+export const getDistance = (p1, p2) => {
 
   const c = Math.cos;
   const p = 0.017453292519943295;    // Math.PI / 180
