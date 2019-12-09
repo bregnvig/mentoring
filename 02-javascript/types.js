@@ -55,4 +55,3 @@ console.log(myNull || 'Hello world');
 // What else can you think of? :-)
 console.log(myArray == 0);
 console.log(myArray === 0);
-

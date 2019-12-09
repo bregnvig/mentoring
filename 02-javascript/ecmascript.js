@@ -32,7 +32,10 @@ const myNumber = 42;
 // Did that work? And why did it happen?
 
 const myObject = {};
+// Object.freeze(myObject);
 myObject.a = 'My A';
+console.log('*****', myObject.a);
+
 
 // Working with scopes
 // Create a scope using { // mycode }. In the scope create a constant 'a' and assign it a value. 
@@ -82,11 +85,28 @@ myCopy[0] = 'A';
 console.log(initialArray);
 console.log(myCopy);
 
+const f = {
+  a: 1,
+  b: 2,
+  c: {
+    c: 3
+  }
+};
+
+const g = {...f};
+
+g.a = 19;
+g.c.c = 7;
+
+console.log(f);
+console.log(g);
+
+
 /** DESTRUCTURING */
 const myWrapper = ({pre, post, text}) => console.log(`${pre}${text}${post}`)
 
 // Call the above function and make it log -HELLO_
-console.log(myWrapper({pre: '-', text: 'HELLO', post: '_'}));
+myWrapper({pre: '-', text: 'HELLO', post: '_'});
 
 /** CLASSES */
 
