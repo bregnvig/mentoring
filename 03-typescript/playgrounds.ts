@@ -1,4 +1,6 @@
-export const playgrounds = [{
+import { Playground } from "./classes-and-interfaces";
+
+export const playgrounds: Playground[] = [{
   "id": "legeplads.1",
   "name": "Havnegades trampolinpromenade",
   "description": "Hop i trampolin med havnekig.",
