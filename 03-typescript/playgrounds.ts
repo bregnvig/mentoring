@@ -1,4 +1,4 @@
-import { Playground } from "./classes-and-interfaces";
+import { Playground, Coordinate } from "./classes-and-interfaces";
 
 export const playgrounds: Playground[] = [{
   "id": "legeplads.1",
@@ -1198,7 +1198,7 @@ export const playgrounds: Playground[] = [{
   }
 }]
 
-export const getDistance = (p1, p2) => {
+export const getDistance = (p1: Coordinate, p2: Coordinate) => {
 
   const c = Math.cos;
   const p = 0.017453292519943295;    // Math.PI / 180

@@ -21,7 +21,7 @@ import {playgrounds, getDistance} from './playgrounds';
  export interface Playground {
    id: string;
    name: string;
-   description?: string;
+   description?: string | null | undefined;
    addressDescription?: string;
    position: Coordinate;
  }
@@ -38,7 +38,7 @@ import {playgrounds, getDistance} from './playgrounds';
  class PlaygroundService {
    private playgrounds: Playground[] = playgrounds;
 
-   find(id: string): Playground {
+   find(id: string): Playground | undefined {
      return this.playgrounds.find(p => p.id === id);
    }
 
