@@ -1,4 +1,6 @@
-export const playgrounds = [{
+import { Playground } from "./classes-and-interfaces";
+
+export const playgrounds: Playground[] = [{
   "id": "legeplads.1",
   "name": "Havnegades trampolinpromenade",
   "description": "Hop i trampolin med havnekig.",
@@ -163,7 +165,6 @@ export const playgrounds = [{
 }, {
   "id": "legeplads.19",
   "name": "Tårnlegepladsen",
-  "description": null,
   "addressDescription": "Frederik V's Vej 4",
   "position": {
       "lat": 55.69724545113915,
