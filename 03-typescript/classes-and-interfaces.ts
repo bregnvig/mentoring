@@ -19,7 +19,7 @@ import {playgrounds, getDistance} from './playgrounds';
  }
 
  export interface Playground {
-   id: string;
+   readonly id: string;
    name: string;
    description?: string;
    addressDescription?: string;

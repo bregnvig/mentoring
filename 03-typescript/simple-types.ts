@@ -18,7 +18,7 @@ myArray.push('c');
 // Create two strings using let. One with explicit type, and one without. Notice if you hover you
 // mouse cursor above the one without an explicit type, it will still say string as type
 
-let myExplicitString = 'My explicit string';
+let myExplicitString: string = 'My explicit string';
 let myImplicitString = 'My implicit string';
 
 // Create an object with two properties, name and descriptiion. Name is 'Legepladsen på Sundbyvester Plads',
@@ -68,7 +68,7 @@ const implicitObject = {
 const objectObject: object = {
   a: 'a',
   b: 'b'
-};
+} as const;
 
 // objectObject.c = 'sdsdf';
 
