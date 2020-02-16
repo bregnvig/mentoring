@@ -5,10 +5,11 @@ import { LeafletModule } from './leaflet';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
 import { DefaultDescriptionPipe } from './shared/pipes/default-description.pipe';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     declarations: [AppComponent, SidebarComponent, FooterComponent, DefaultDescriptionPipe],
-    imports: [BrowserModule, LeafletModule],
+    imports: [BrowserModule, HttpClientModule, LeafletModule],
     bootstrap: [AppComponent],
 })
 export class AppModule { }
