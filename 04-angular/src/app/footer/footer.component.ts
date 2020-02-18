@@ -1,5 +1,6 @@
-import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, Input, ChangeDetectionStrategy, OnChanges } from '@angular/core';
 import { Playground } from '../shared/playground';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-footer',
@@ -7,6 +8,19 @@ import { Playground } from '../shared/playground';
   styleUrls: ['./footer.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class FooterComponent {
+export class FooterComponent implements OnChanges, OnInit {
+
   @Input() playground: Playground;
+  editing = false;
+  playgroundControl = new FormControl(null, Validators.required);
+
+
+  ngOnInit() {
+    this.playgroundControl.valueChanges.subscribe(console.log);
+  }
+
+  ngOnChanges() {
+    this.playgroundControl.patchValue(this.playground);
+  }
+
 }

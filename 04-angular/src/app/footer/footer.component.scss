@@ -1,0 +1,11 @@
+h3 {
+    cursor: pointer;
+    i {
+        visibility: hidden;
+    }
+    &:hover {
+        i {
+            visibility: inherit;
+        }
+    }
+}
